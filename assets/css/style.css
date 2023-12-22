@@ -1,0 +1,31 @@
+/* Variable Selector */
+:root {
+    --outer-space: #33393f;
+    --turquoise: #2aefcb;
+    --gin: #e0eae4;
+    --pink: #e866ec;
+}
+
+/* Element Selectors */
+
+/* Class Selectors */
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* ID Selectors */
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 600px) {
+
+}
