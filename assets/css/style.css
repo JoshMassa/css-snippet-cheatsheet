@@ -7,23 +7,79 @@
 }
 
 /* Element Selectors */
-
-/* Class Selectors */
-
-.row {
+body, .grid-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+body, h2.card-header {
+    background-color: var(--outer-space);
+}
+
+.card, .card-header, .card-desc, h1, footer {
+    color: var(--pink);
+    border-color: var(--gin);
+}
+
+footer {
+    font-size: 24px;
+}
+
+header p, .card-code {
+    color: var(--gin); 
+}
+
+h1 {
+    font-size: 56px;
+    padding-top: 35px;
+}
+
+header p {
+    font-size: 19px;
+    width: 75%;
+    text-align: center;
+}
+
+/* Class Selectors */
+.card {
+    border-style: dashed;
+    width: 425px;
+    height: 300px;
+    padding: 25px;
+    margin: 15px;
+}
+
+.card-code {
+    border-radius: 10px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(232, 102, 236, 0.2) 0%,
+        rgba(232, 102, 236, 0.6) 100%);
+}
+
+.card-header {
+    border-style: solid;
+    border-radius: 5px; 
+    padding: 5px;
+    margin-top: -40px;
+    font-size: 32px;
 }
 
 /* ID Selectors */
+#header-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 /* Media Queries */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1440px) {
 
 }
 
 @media screen and (max-width: 768px) {
-
+    
 }
 
 @media screen and (max-width: 600px) {
