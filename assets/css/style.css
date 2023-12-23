@@ -75,12 +75,13 @@ header p {
     border-style: solid;
     border-radius: 5px; 
     padding: 5px;
-    margin-top: -40px;
+    margin-top: -45px;
     font-size: 32px;
 }
 
 .grid-container {
     display: grid;
+    /* grid-template-rows: repeat(2, auto); */
     grid-template-columns: repeat(3, 1fr);
     padding: 20px;
     justify-content: center;
