@@ -29,7 +29,8 @@ code {
 footer {
     font-size: 24px;
     text-align: center;
-    padding-bottom: 75px;
+    padding-top: 25px;
+    padding-bottom: 35px;
 }
 
 header p, .card-code {
@@ -86,38 +87,14 @@ header p {
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 20px 20px 20px 1%;
+    /* padding: 20px 20px 20px 1%; */
     justify-content: center;
     box-sizing: border-box;
 }
 
 /* ID Selectors */
-#box1 {
+#box1, #box2, #box3, #box4, #box5, #box6 {
     padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-#box2 {
-    padding-top: 50px;
-    padding-bottom: 18px;
-}
-
-#box3 {
-    padding-top: 10px;
-}
-
-#box4 {
-    padding-top: 60px;
-    padding-bottom: 65px;
-}
-
-#box5 {
-    padding-top: 10px;
-}
-
-#box6 {
-    padding-top: 70px;
-    padding-bottom: 115px;
 }
 
 #header-container {
@@ -678,7 +655,7 @@ header p {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     #box1 {
         padding-top: 10px;
         padding-bottom: 30px;
@@ -691,11 +668,11 @@ header p {
     
     #box3 {
         padding-top: 10px;
+        padding-bottom: 120px;
     }
     
     #box4 {
-        padding-top: 60px;
-        padding-bottom: 125px;
+        padding-top: 10px;
     }
     
     #box5 {
@@ -708,7 +685,7 @@ header p {
     }
 
     .card-header {
-        font-size: 2.22em;
+        font-size: 2em;
     }
 
     .card-desc {
