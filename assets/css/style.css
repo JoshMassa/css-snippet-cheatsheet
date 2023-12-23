@@ -7,10 +7,10 @@
 }
 
 /* Element Selectors */
-body, .grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+body {
+    margin: 0;
+    width: fit-content;
+    box-sizing: border-box;
 }
 
 body, h2.card-header {
@@ -28,6 +28,7 @@ code {
 
 footer {
     font-size: 24px;
+    text-align: center;
 }
 
 header p, .card-code {
@@ -37,12 +38,14 @@ header p, .card-code {
 h1 {
     font-size: 56px;
     padding: 35px 0 15px 0;
+    text-align: center;
 }
 
 header p {
     font-size: 19px;
     width: 75%;
     text-align: center;
+    line-height: 1.5;
 }
 
 /* Class Selectors */
@@ -76,6 +79,13 @@ header p {
     font-size: 32px;
 }
 
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    justify-content: center;
+}
+
 /* ID Selectors */
 #header-container {
     display: flex;
@@ -85,14 +95,20 @@ header p {
 }
 
 /* Media Queries */
-@media screen and (max-width: 1440px) {
-
+@media screen and (max-width: 2560px) and (min-width: 769px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
-@media screen and (max-width: 768px) {
-    
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
-@media screen and (max-width: 600px) {
-
+@media screen and (max-width: 480px) {
+    .grid-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
