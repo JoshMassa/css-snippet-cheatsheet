@@ -1,4 +1,4 @@
-/* Variable Selector */
+/* Variables */
 :root {
     --outer-space: #33393f;
     --turquoise: #2aefcb;
@@ -17,11 +17,6 @@ body, h2.card-header {
     background-color: var(--outer-space);
 }
 
-.card, .card-header, .card-desc, h1, footer {
-    color: var(--pink);
-    border-color: var(--gin);
-}
-
 code {
     line-height: 1.75;
 }
@@ -31,10 +26,6 @@ footer {
     text-align: center;
     padding-top: 25px;
     padding-bottom: 35px;
-}
-
-header p, .card-code {
-    color: var(--gin); 
 }
 
 h1 {
@@ -75,15 +66,6 @@ header p {
         rgba(231, 102, 236, 0.838) 100%);
 }
 
-article:hover, 
-article:hover h2,
-article:hover .card-code {
-    box-shadow: inset 0px 0px 8px
-    var(--turquoise), 0 0 15px
-    var(--turquoise);
-    animation: pulse 1.5s infinite;
-}
-
 .card-desc {
     padding: 15px;
     line-height: 1.5;
@@ -114,6 +96,26 @@ article:hover .card-code {
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 35px;
+}
+
+/* Variable Selectors */
+.card, .card-header, .card-desc, h1, footer {
+    color: var(--pink);
+    border-color: var(--gin);
+}
+
+header p, .card-code {
+    color: var(--gin); 
+}
+
+/* Effect Selectors */
+article:hover, 
+article:hover h2,
+article:hover .card-code {
+    box-shadow: inset 0px 0px 8px
+    var(--turquoise), 0 0 15px
+    var(--turquoise);
+    animation: pulse 1.5s infinite; /* Make cards have a glowing and pulsing effect when hovered*/
 }
 
 /* Laptop & Desktop Media Queries */
@@ -906,5 +908,5 @@ article:hover .card-code {
     }
     100% {
         box-shadow: 0 0 10px var(--turquoise, 0.7);
-    }
+    } /* This code block sets the properties for "animation: pulse" */
 }
