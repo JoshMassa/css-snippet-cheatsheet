@@ -81,11 +81,11 @@ header p {
 }
 
 article:hover, 
-h2:hover,
-.card-code:hover {
+article:hover h2,
+article:hover .card-code {
     box-shadow: inset 0px 0px 8px
-    rgba(232, 102, 236, 1), 0 0 15px
-    rgba(232, 102, 236, 1);
+    var(--turquoise), 0 0 15px
+    var(--turquoise);
 }
 
 .card-desc {
@@ -104,7 +104,6 @@ h2:hover,
 .grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* padding: 20px 20px 20px 1%; */
     justify-content: center;
     box-sizing: border-box;
 }
