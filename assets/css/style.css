@@ -75,17 +75,13 @@ header p {
         rgba(231, 102, 236, 0.838) 100%);
 }
 
-.card-code .card-header {
-    /* border-radius: 8px; */
-    transition: all 0.5s ease-in-out;
-}
-
 article:hover, 
 article:hover h2,
 article:hover .card-code {
     box-shadow: inset 0px 0px 8px
     var(--turquoise), 0 0 15px
     var(--turquoise);
+    animation: pulse 1.5s infinite;
 }
 
 .card-desc {
@@ -897,5 +893,18 @@ article:hover .card-code {
 @media screen and (max-width: 767px) {
     .grid-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Keyframes */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 10px var(--turquoise, 0.7);
+    }
+    50% {
+        box-shadow: 0 0 20px var(--turquoise, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 10px var(--turquoise, 0.7);
     }
 }
