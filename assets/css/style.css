@@ -609,7 +609,7 @@ header p {
     }
 }
 
-@media screen and (max-width: 1369px) and (min-width: 1248px) {
+@media screen and (max-width: 1369px) and (min-width: 993px) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -651,7 +651,7 @@ header p {
     }
 }
 
-@media screen and (max-width: 1023px) and (min-width: 768px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
     }
